@@ -6,7 +6,7 @@ import { TableComponent } from './table/table.component';
 import { DadoPadreComponent } from './dado-padre/dado-padre.component';
 import { EventoHijaPadreComponent } from './evento-hija-padre/evento-hija-padre.component';
 import { SelectornumericoPadreComponent } from './selectornumerico-padre/selectornumerico-padre.component';
-import { SelectornumericoComponent } from './selectornumerico/selectornumerico.component';
+import { NgbdTableSortable } from './sortable-table/sortable-table.component';
 
 const routes: Routes = 
 [
@@ -16,7 +16,7 @@ const routes: Routes =
   {path:'dadoPadre', component:DadoPadreComponent},
   {path:'eventohijapadre', component:EventoHijaPadreComponent},
   {path:'selectorNumerico', component:SelectornumericoPadreComponent},
-  {path:'selectorNumerico0', component:SelectornumericoComponent}
+  {path:'SortableTable', component:NgbdTableSortable}
 ];
 
 @NgModule({

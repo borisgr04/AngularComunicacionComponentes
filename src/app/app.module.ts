@@ -15,6 +15,8 @@ import { EventoHijaPadreComponent } from './evento-hija-padre/evento-hija-padre.
 import { CronometroComponent } from './cronometro/cronometro.component';
 import { SelectornumericoPadreComponent } from './selectornumerico-padre/selectornumerico-padre.component';
 import { SelectornumericoComponent } from './selectornumerico/selectornumerico.component';
+import { NgbdTableSortable,NgbdSortableHeader } from './sortable-table/sortable-table.component';
+
 
 
 @NgModule({
@@ -30,13 +32,16 @@ import { SelectornumericoComponent } from './selectornumerico/selectornumerico.c
     EventoHijaPadreComponent,
     CronometroComponent,
     SelectornumericoPadreComponent,
-    SelectornumericoComponent
+    SelectornumericoComponent,
+    NgbdTableSortable,
+    NgbdSortableHeader
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
   ],
+  exports: [NgbdTableSortable],
   providers: [],
   entryComponents: 
   [
